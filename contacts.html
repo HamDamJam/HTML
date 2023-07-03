@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact LTS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<header>
+    <h1>Contact Us</h1>
+</header>
+<main>
+    <ul> <!-- Denne <ul> skal være sammen med <header>. Fordi det er en navigation bar, siden det er brukt for å navigere, så skal den være innenfor <nav>-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/index.html#about-lts">About LTS</a></li>
+        <li><a href=/index.html#menu-section>Our Menu</a></li>
+        <li><a href="hours.html">Store Hours</a></li>
+    </ul>
+
+    <figure>
+        <img src="3tacos.jpg" alt="Best Of Tacos" title="Best of Tacos" width="400" height="225">
+        <figcaption>Little Taco Shop Tacos</figcaption>
+    </figure>
+
+    <h2>Our Contact Form</h2>
+
+    <article> <!-- Han på youtube bruker ikke artcile her? Han bruker ingenting, har bare <form> for seg selv. Kan kanskje bruke <section>? | UPDATE, han fiksa på det og brukte faktisk <section> element :D-->
+        <form action="#">
+            <fieldset>
+                <legend><strong>Send Us A Message</strong></legend>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Daniel" required>
+                </p>
+                
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="yourmail@outlook.com" required>
+                </p>
+
+                    <label for="message">Your Message</label><br>
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Type your message here.."></textarea><br>
+            </fieldset>
+            <p>
+                <button type="submit">Send</button> 
+                <button type="reset">Reset</button>
+            </p>
+
+            <h2>Our Location</h2>
+
+            <!-- 
+            <address>Taco Cave Lair, Momo Taco City,<br>Abu MO 55555-55555</address> 
+            
+            
+                <p>Phone:<a href="tel">77700777</a></p>
+
+                Som du ser her, så hadde du tlf nr inni <p>, det var feil. Tlf nr skal være inne sammen med <address> elementet. Under kan du se hvordan det skal egentlig gjøres.
+            -->  
+            
+            <address>
+                Taco Cave Lair, Momo Taco City,<br>Abu MO 55555-55555
+                <br><br>
+                Phoner: <a href="tel:+4777700777">777-00-777></a>
+            </address>
+            <!-- Inni href er hvor du skal legge til tlf nr, HUSK! tle: før nr-->
+
+            <p>
+                <a href="contacts.html">Back to Top</a>
+            </p>
+            <hr>
+        </form>
+        <footer>
+            Copyright &copy; The Little Taco Shop
+        </footer>
+    </article>
+</main>
+
+
+</body>
+</html>
